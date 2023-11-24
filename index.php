@@ -1,10 +1,5 @@
-
-
 <?php
-//require_once('../../../core/conexionmysql.php');
-//require_once('../../../core/VarConfig.php');
 //Default Configuration
-$c = $_POST['c'];
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
 
 /**
@@ -19,7 +14,7 @@ $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":
 define('VERSION', '2.5.3');
 
 //Application Title
-define('APP_TITLE', $siteName.$c);
+define('APP_TITLE', 'Tiny File Manager');
 
 // --- EDIT BELOW CONFIGURATION CAREFULLY ---
 
@@ -66,8 +61,7 @@ $default_timezone = 'Etc/UTC'; // UTC
 
 // Root path for file manager
 // use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
-// $root_path = $_SERVER['DOCUMENT_ROOT'];
-$root_path = '/home/dh_442imt/cloud.cruchi.com/';
+$root_path = $_SERVER['DOCUMENT_ROOT'];
 
 // Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
